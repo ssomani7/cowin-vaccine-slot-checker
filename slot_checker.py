@@ -9,7 +9,7 @@ import requests
 
 class SlotChecker:
     def __init__(self):
-        self.DISTRICT_IDS = [(294, "BBMP"), (265, "Bengaluru Urban")]
+        self.DISTRICT_IDS = [(383, "Latur")]
         self.NUM_WEEKS = 5
         self.DATES = []
         self.URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id={}&date={}"
@@ -17,7 +17,7 @@ class SlotChecker:
         self.ALARM = True
         self.FILE_NAME = "vaccine.txt"
         self.MIN_AGE = 18
-        self.MIN_CAPACITY = 0
+        self.MIN_CAPACITY = 10
 
         now = datetime.datetime.now()
         for i in range(5):
